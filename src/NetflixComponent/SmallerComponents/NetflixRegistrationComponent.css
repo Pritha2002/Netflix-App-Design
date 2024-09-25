@@ -1,0 +1,46 @@
+/* Styles for the input field */
+.form-modify {
+    background-color: rgba(0, 0, 0, 0.2);  /* Light black */
+    color: #fff; /* Text color */
+    padding: 5px; /* Padding for better spacing */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 16px; /* Font size */
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: transparent; /* Hide the placeholder text */
+    opacity: 0; /* Fully transparent */
+}
+
+/* Floating label styling */
+.form-floating {
+    position: relative;
+}
+
+.form-floating label {
+    position: absolute;
+    left: 10px; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent label */
+    transition: all 0.2s; /* Smooth transition */
+}
+
+/* When input is focused */
+.form-modify:focus::placeholder {
+    color: transparent; /* Keep placeholder hidden on focus */
+}
+
+.form-modify:focus + label,
+.form-modify:not(:placeholder-shown) + label {
+    top: -10px; /* Move the label up */
+    font-size: 12px; /* Smaller font size when floating */
+    color: #ff4d4d; /* Change label color on focus */
+}
+
+/* Focus state */
+/* .form-modify:focus {
+    outline: none;
+    border-color: #ff4d4d; 
+    background-color: rgba(0, 0, 0, 0.3);  Slightly darker background 
+} */

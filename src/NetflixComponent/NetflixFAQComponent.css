@@ -1,0 +1,31 @@
+.netflix_faq{
+    padding: 50px 180px;
+}
+
+.accordion-item {
+    background-color: rgba(234, 231, 231, 0.3); 
+    color: white; 
+    border: 2px solid rgba(63, 62, 62, 0.3);;
+}
+
+.accordion-button {
+    background-color: rgba(63, 62, 62, 0.3);
+    color: white; 
+    border: rgba(63, 62, 62, 0.3);
+    font-size: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(63, 62, 62, 0.3);
+    color: white;
+}
+
+.accordion-item {
+    margin-bottom: 15px; 
+}
+
+.accordion-body {
+    background-color:rgba(38, 38, 38, 0.3);
+    color: white;
+    font-size: 25px;
+}
